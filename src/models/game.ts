@@ -118,6 +118,7 @@ export class Game {
     private showStatus() {
         this.clearConsole()
         console.log("-------------------------------\n")
+        console.log(this.showHangman())
         console.log("hack:", this.wordToGuess)
         console.log(this.wordInProgress.join(" ") + "\n")
         console.log("Tus vidas: " + this.player.getTries())
@@ -183,6 +184,78 @@ export class Game {
     private clearConsole() {
         process.stdout.write('\x1Bc')
     }
+
+    /**
+     * Muestra el dibujo del ahorcado segun el número de vidas restantes.
+     */
+    private showHangman() {
+        const hangmanStages = [
+            `
+            ------
+            |    |
+                |
+                |
+                |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+                |
+                |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+            |    |
+                |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+            /|    |
+                |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+            /|\\   |
+                |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+            /|\\   |
+            /     |
+                |
+            =========`,
+            
+            `
+            ------
+            |    |
+            O    |
+            /|\\   |
+            / \\   |
+                |
+            =========`
+        ]
+        return hangmanStages[6 - this.player.getTries()]
+    }
+
 
     // #endregion
     
