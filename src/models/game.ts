@@ -282,7 +282,7 @@ export class Game {
      * @returns {boolean} Verdadero si el jugador ha adivinado la palabra, falso en caso contrario.
      */
     checkWin() {
-        return this.wordInProgress.join("") === this.wordToGuess
+        return this.wordInProgress.join("").toLocaleLowerCase() === this.wordToGuess.toLocaleLowerCase()
     }
 
     // #endregion
