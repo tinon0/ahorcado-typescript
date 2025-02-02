@@ -2,7 +2,6 @@ import { Game } from "./models/game";
 
 // Creo una nueva instancia del juego.
 const game = new Game()
-game.startGame()
 
 /**
  * Inicia el juego y maneja el bucle principal del juego.
