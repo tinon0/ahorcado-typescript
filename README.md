@@ -42,7 +42,7 @@ Este es un juego clásico de **Ahorcado** donde debes adivinar una palabra secre
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/ahorcado.git
+   git clone https://github.com/tinon0/ahorcado-typescript.git
    ```
 
 2. **Instala las dependencias**:
@@ -105,7 +105,7 @@ This is a classic **Hangman** game where you must guess a secret word by enterin
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/hangman.git
+   git clone https://github.com/tinon0/ahorcado-typescript.git
    ```
 
 2. **Install the dependencies**:
