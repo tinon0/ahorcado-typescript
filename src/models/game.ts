@@ -119,7 +119,6 @@ export class Game {
         this.clearConsole()
         console.log("-------------------------------\n")
         console.log(this.showHangman())
-        console.log("hack:", this.wordToGuess)
         console.log(this.wordInProgress.join(" ") + "\n")
         console.log("Tus vidas: " + this.player.getTries())
         console.log("Palabras usadas: " + this.lettersUsed.join(" - "))
